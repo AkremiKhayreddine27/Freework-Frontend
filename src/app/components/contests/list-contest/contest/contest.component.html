@@ -1,0 +1,12 @@
+<div class="card mb-5" [class.loading]="loading" >
+  <div class="card-body">
+    <h6 class="card-title"><a *ngIf="!loading" href="#" [routerLink]="'/contests/'+contest.id">{{ contest.title }}</a></h6>
+    <h6 class="card-subtitle mb-4"><span *ngIf="!loading">{{ publisher.name }}</span></h6>
+    <p class="card-text"><span *ngIf="!loading">{{ contest.description }}</span></p>
+  </div>
+  <div class="card-footer text-muted">
+    <i class="fa fa-clock-o mr-1"></i>2 days ago
+    <i class="fa fa-users mr-1"></i>{{ contest.entriesCount }} entries
+    <i class="fa fa-users mr-1"></i>{{ contest.freelancersCount }} freelancers
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card mb-5" [class.loading]="loading"> 
+  <div class="card-body">
+    <h6 class="card-title"><a *ngIf="!loading" href="#" [routerLink]="'/entries/'+entry.id">{{ entry.title }}</a></h6>
+    <h6 class="card-subtitle mb-4"><span *ngIf="!loading">{{ freelancer.name }}</span></h6>
+    <p class="card-text"><span *ngIf="!loading">{{ entry.description }}</span></p>
+  </div>
+  <div class="card-footer text-muted">
+    <i class="fa fa-clock-o mr-1"></i>2 days ago
+    <button (click)="deleteEntry()" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+  </div>
+</div>

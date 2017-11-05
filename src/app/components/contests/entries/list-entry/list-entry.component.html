@@ -1,0 +1,6 @@
+<a href="#" [routerLink]="['/contests/'+contestId+'/entries/create']" class="btn btn-danger">Upload new entry</a>
+<div class="row mt-5" *ngFor="let row of chunk">
+  <div class="col-md-4" *ngFor="let entry of row">
+    <app-entry [entry]="entry"></app-entry>
+  </div>
+</div>

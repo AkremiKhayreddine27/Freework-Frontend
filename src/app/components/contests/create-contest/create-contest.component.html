@@ -1,0 +1,26 @@
+<h4 class="title">NEW CONTEST</h4>
+    <form (submit)="storeContest()" class="p-4 row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <input [(ngModel)]="title" name="title" class="form-control" type="text" placeholder="TITLE"/>
+            </div>
+            <div class="form-group">
+                <textarea [(ngModel)]="description" name="description" placeholder="DESCRIPTION" class="form-control" rows="8"></textarea>
+            </div>
+        </div>
+        <div class="col-md-6">
+                <div class="form-group">
+                    <input [(ngModel)]="duration" name="duration" class="form-control" type="text" placeholder="duration"/>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="type" name="type" class="form-control" type="text" placeholder="type"/>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="prize" name="prize" class="form-control" type="text" placeholder="prize"/>
+                </div>
+                <div class="form-group text-right">
+                    <a href="#" routerLink="/contests" class="btn btn-sm btn-danger">CANCEL</a>
+                    <button type="submit" class="btn btn-sm btn-info"><i class="fa fa-send mr-2"></i>UPLOAD</button>
+                </div>
+            </div>
+    </form>

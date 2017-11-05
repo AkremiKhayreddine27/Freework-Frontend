@@ -1,0 +1,25 @@
+.card{
+    border: none;
+    .card-body{
+        background-color: #fcfcfc;
+    }
+}
+.loading{
+    .card-body{
+        .card-title{
+            background-color: #dddddd;
+            height: 11px;
+            width: 100%;
+        }
+        .card-subtitle{
+            background-color: #dddddd;
+            height: 11px;
+            width: 100%;
+        }
+        .card-text{
+            background-color: #dddddd;
+            height: 11px;
+            width: 100%;
+        }
+    }
+}
